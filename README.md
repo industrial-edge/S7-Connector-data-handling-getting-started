@@ -83,7 +83,7 @@ Once the application is successfully deployed, the sinus wave can be deployed in
 ![Dashboard.PNG](docs/graphics/Dashboard.PNG)
 
 ## Implementation
-A detailed description of the implementation of the project can be found in the [implantation](docs/Implementation.md) file
+A detailed description of the implementation of the project can be found in the [implementation](docs/Implementation.md) file
 
 ## Documentation
   
