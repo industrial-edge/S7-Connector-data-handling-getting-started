@@ -259,7 +259,7 @@ The following code snippet shows how to get the desired information from the wri
 
   msg.payload = timestampMapObject.ts;
 
-  newMsg.payload = timestampMapObject.map.get(nameIDMap.get("SinusVal"))
+  newMsg.payload = timestampMapObject.map.get(nameIDMap.get("sinusVal"))
 
   return [msg,newMsg];
 ```
