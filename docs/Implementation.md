@@ -22,7 +22,7 @@ Using the "mqtt-in" node makes it possible to receive the published MQTT-Message
 
 ![mqtt_node](graphics/MQTT-Blocks.PNG)
 
-![mqttin_settings](graphics/MQTT-In_Config.PNG)
+![mqttin_settings](graphics/MQTT-InConfig.PNG)
 
 To save the changes and establish a connection press the deploy button in the left corner. At the beginning, after the establishment of the connection, the Simatic S7 Connector will publish a message with meta data. This message contains an array with all the connections and the different datapoints of these connections. All the datapoints have a name and an ID. The ID of a data point does not necessarily always remain the same. With same changes (for example in the TIA-Project) the ID can change.
 
