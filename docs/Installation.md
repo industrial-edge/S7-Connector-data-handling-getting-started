@@ -42,7 +42,7 @@ Add needed tags (since we want to write variable values into the PLC, set "Read 
 
 ![s7_connector_config](graphics/S7_Connector_Configuration.PNG)
 
-Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
+>Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
 
 Edit the settings:
 
