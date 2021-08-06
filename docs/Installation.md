@@ -38,9 +38,11 @@ Add a data source:
 
 ![S7_connector_data_source](graphics/S7_Connector_Data_Source.png)
 
-Add needed tags (since we want to write variable values into the PLC, set "Read & Write" as access mode):
+Add needed tags (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
 ![s7_connector_config](graphics/S7_Connector_Configuration.PNG)
+
+>Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
 
 Edit the settings:
 
