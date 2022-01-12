@@ -54,7 +54,7 @@ Deploy and start the project.
 
 ## Configure IE Flow Creator
 
-Open the IE Flow Creator App from the IED Web UI and import the [FlowCreator.JSON](src/FlowCreator.JSON) file from the source folder.
+Open the IE Flow Creator App from the IED Web UI and import the [FlowCreator.JSON](../src/FlowCreator.json) file from the source folder.
 
 ![importFlowCreator.PNG](graphics/importFlowCreator.PNG)
 
