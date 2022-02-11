@@ -46,9 +46,9 @@ The application read and write some data of the PLC. The data is published via S
 
 - Industrial Edge Management V 1.2.0-36
   - IE Databus V1.2.16
-  - IE Databus Configurator V1.2.23
+  - IE Databus Configurator V1.2.29
   - IE Flow Creator V 1.1.2
-  - Simatic S7 Connector Configurator V1.2.32
+  - Simatic S7 Connector Configurator V1.2.38
   - Simatic S7 Connector V1.2.26
 - Industrial Edge Device V 1.2.0-56
 - TIA Portal V16
