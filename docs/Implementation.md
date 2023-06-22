@@ -1,7 +1,7 @@
 # Implementation
 
 - [Implementation](#implementation)
-  - [The IE Flow Creator](#the-ie-flow-creator)
+  - [The Flow Creator](#the-flow-creator)
     - [Subscribe a MQTT-Topic](#subscribe-a-mqtt-topic)
     - [Send an MQTT-Message to write Data](#send-an-mqtt-message-to-write-data)
     - [Create a Function](#create-a-function)
@@ -15,22 +15,22 @@
         - [Parse Metadata](#parse-metadata)
         - [Asign ID-Value](#asign-id-value)
     
-## The IE Flow Creator
+## The Flow Creator
 
 ### Subscribe a MQTT-Topic
-Using the "mqtt-in" node makes it possible to receive the published MQTT-Messages from the Simatic S7 Connector. In the configuration of the "mqtt-in" node, the subscribed mqtt-topic must be specified. `"ie/#"` subscribes all the messages from the configured IE Databus. It is also possible to set the output type of the node (String, buffered, JSON, base64 encoded String) in the configuration.
+Using the "mqtt-in" node makes it possible to receive the published MQTT-Messages from the SIMATIC S7 Connector. In the configuration of the "mqtt-in" node, the subscribed mqtt-topic must be specified. `"ie/#"` subscribes all the messages from the configured Databus. It is also possible to set the output type of the node (String, buffered, JSON, base64 encoded String) in the configuration.
 
 ![mqtt_node](graphics/MQTT-Blocks.PNG)
 
 ![mqttin_settings](graphics/MQTT-InConfig.PNG)
 
-To save the changes and establish a connection press the deploy button in the left corner. At the beginning, after the establishment of the connection, the Simatic S7 Connector will publish a message with meta data. This message contains an array with all the connections and the different datapoints of these connections. All the datapoints have a name and an ID. The ID of a data point does not necessarily always remain the same. With same changes (for example in the TIA-Project) the ID can change.
+To save the changes and establish a connection press the deploy button in the left corner. At the beginning, after the establishment of the connection, the SIMATIC S7 Connector will publish a message with meta data. This message contains an array with all the connections and the different datapoints of these connections. All the datapoints have a name and an ID. The ID of a data point does not necessarily always remain the same. With same changes (for example in the TIA-Project) the ID can change.
 
 ![mqttin_init_Message](graphics/MQTT-init-message.PNG)
 
 In the following messages the distinction between the datapoints can only be made by the ID. So, it is necessary to save the assignment between name and ID for the processing of the messages. In this example this is realized with a HashMap, in which the name acts as key and the ID as value. With this HashMap it is always possible to get the right ID to the variable name. More details information can be found under [Data Handling](#data-handling).
 
-By change of a subscribe variable, the Simatic S7 Connector send another MQTT-messages which includes an Array with all changed variables. The information of the datapoint include the ID, timestamp and current value.
+By change of a subscribe variable, the SIMATIC S7 Connector send another MQTT-messages which includes an Array with all changed variables. The information of the datapoint include the ID, timestamp and current value.
 
 ![mqttin_Message](graphics/MQTT-message.PNG)
 
@@ -123,7 +123,7 @@ Debugging is possible with the debugging node. This allows to view the messages 
 
 
 ### Create Line Diagram
-After filter the required current values of the PLC out of the MQTT-Messages of the Simatic S7 Connector Apps, it is possible to plot the values. It is also necessary to assign the diagrams to a group in which they will be displayed.
+After filter the required current values of the PLC out of the MQTT-Messages of the SIMATIC S7 Connector Apps, it is possible to plot the values. It is also necessary to assign the diagrams to a group in which they will be displayed.
 
 ![Chart](graphics/Chart.PNG)
 
