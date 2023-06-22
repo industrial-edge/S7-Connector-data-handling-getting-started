@@ -2,24 +2,24 @@
 
 - [Configuration](#configuration)
   - [Configure PLC Connection](#configure-plc-connection)
-    - [Configure the IE Databus](#configure-the-ie-databus)
-    - [Configure the Simatic S7 Connector](#configure-the-simatic-s7-connector)
-  - [Configure IE Flow Creator](#configure-ie-flow-creator)
+    - [Configure the Databus](#configure-the-databus)
+    - [Configure the SIMATIC S7 Connector](#configure-the-simatic-s7-connector)
+  - [Configure Flow Creator](#configure-flow-creator)
 
 ## Configure PLC Connection
 
-To read data from the PLC and provide the data, we will use the Simatic S7 Connector to establish connection with the PLC via OPC UA.
+To read data from the PLC and provide the data, we will use the SIMATIC S7 Connector to establish connection with the PLC via S7.
 
-The Simatic S7 Connector sends the data to the IE Databus, where the IE Flow Creator app can collect what is needed.
+The SIMATIC S7 sends the data to the Databus, where the Flow Creator app can collect what is needed.
 
 In order to build this infrastructure, these apps must be configured properly:
 
-- IE Databus
-- Simatic S7 Connector
+- Databus
+- SIMATIC S7 Connector
 
-### Configure the IE Databus
+### Configure the Databus
 
-In your IEM open the IE Databus and launch the configurator.
+In your IEM open the Databus and launch the configurator.
 
 Add a user with this topic:
 `"ie/#"`
@@ -30,9 +30,9 @@ Add a user with this topic:
 
 Deploy the configuration.
 
-### Configure the Simatic S7 Connector
+### Configure the SIMATIC S7 Connector
 
-In your IEM open the Simatic S7 Connector and launch the configurator.
+In your IEM open the SIMATIC S7 Connector and launch the configurator.
 
 Add a data source:
 
@@ -48,11 +48,11 @@ Edit the settings:
 
 ![s7_connector_settings](graphics/S7_Connector_Settings.png)
 
-Hint: Username and password should be the same as was set in the IE Databus configuration, e.g., "edge" / "edge".
+Hint: Username and password should be the same as was set in the Databus configuration, e.g., "edge" / "edge".
 
 Deploy and start the project.
 
-## Configure IE Flow Creator
+## Configure Flow Creator
 
 Open the IE Flow Creator App from the IED Web UI and import the [FlowCreator.JSON](../src/FlowCreator.json) file from the source folder.
 
@@ -60,7 +60,7 @@ Open the IE Flow Creator App from the IED Web UI and import the [FlowCreator.JSO
 
 ![importFlow2.PNG](graphics/importFlow2.PNG)
 
-After importing the JSON file, the password set in the IE Databus must be entered in the security settings of the MQTT-node.
+After importing the JSON file, the password set in the Databus must be entered in the security settings of the MQTT-node.
 
 ![ServerEinstellungen.PNG](graphics/Server_einstellungen.PNG)
 
