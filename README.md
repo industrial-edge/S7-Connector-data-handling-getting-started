@@ -23,13 +23,14 @@ This repository contains the source files to build the Simatic S7 Connector Data
 
 ### Overview
 
-This application example describes the implementation and usage of the Common configurator and IIH essentials using the example of an asset model.
+This application example describes the implementation and usage of the Flow Creator using the example of a sinusoidal wave.
 
 ![Use Case](docs/graphics/DataFlow.PNG)
 
 ### General task
 
-The application read and write some data of the PLC. The data is published via SIMATIC S7 Connector and Databus where the IIH essentials can retrive the data. First, the SIMATIC S7 Connector, Databus and Common configurator  must be configured. Afterwards it is possible to add the varaibles in asset, And in the storage data to see the asset variables, which obtain the PLC Data information. The data can be visualized with graphical structure.
+The application read and write some data of the PLC. The data is published via SIMATIC S7 Connector and Databus where the Flow Creator can retrieve the data. First, the SIMATIC S7 Connector, Commmon Configurator needs to be configured. Afterwards it is possible to subscribe the different topics in the Flow Creator and edit, filter and display the messages which obtain the PLC Data information. The data can be visualized with different graphics such as charts, gauge or forms.
+
 
 ## Requirements
 
@@ -48,11 +49,13 @@ The application read and write some data of the PLC. The data is published via S
 - Industrial Edge Management V1.13.10/Kubernetes
   - Databus V2.2.0-3
   - Databus Configurator V2.2.0-4
+  - Common import converter V2.0.0-1
+  - Registry Service V1.8.0-2
   - Flow Creator V1.15.0
   - IIH Essentials V1.8.1 
   - Common Connector Configurator V1.8.1-1
   - SIMATIC S7 Connector V1.8.1
-- Industrial Edge Device V1.10.0-9
+- Industrial Edge Device V1.16.0-1-a-rc1
 - TIA Portal V16
 - S7-1511C
 - Web browser (Mozilla or Chrome)
@@ -62,6 +65,7 @@ The application read and write some data of the PLC. The data is published via S
 - IE Device is onboarded to a IE Management
 - Databus Configurator is deployed to the IE Management
 - Databus is deployed to the IE Device
+- S7 connector configured via Common configurator 
 - Flow Creator is deployed to the IE Device
 
 ### TIA Project
