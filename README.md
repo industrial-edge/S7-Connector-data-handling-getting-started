@@ -1,6 +1,6 @@
 # S7 Connector Data Handling Getting Started
 
-This repository contains the source files to build the OPC UA Connector Data Handling Getting Started example.
+This repository contains the source files to build the Simatic S7 Connector Data Handling Getting Started example.
 
 - [S7 Connector Data Handling Getting Started](#s7-connector-data-handling-getting-started)
   - [Description](#description)
@@ -23,13 +23,13 @@ This repository contains the source files to build the OPC UA Connector Data Han
 
 ### Overview
 
-This application example describes the implementation and usage of the Flow Creator using the example of a sinusoidal wave. 
+This application example describes the implementation and usage of the Common configurator and IIH essentials using the example of an asset model.
 
 ![Use Case](docs/graphics/DataFlow.PNG)
 
 ### General task
 
-The application read and write some data of the PLC. The data is published via SIMATIC S7 Connector and Databus where the Flow Creator can retrieve the data. First, the SIMATIC S7 Connector and the Databus must be configured. Afterwards it is possible to subscribe the different topics in the Flow Creator and edit, filter and display the messages which obtain the PLC Data information. The data can be visualized with different graphics such as charts, gauge or forms.
+The application read and write some data of the PLC. The data is published via SIMATIC S7 Connector and Databus where the IIH essential can retrive the data. First, the SIMATIC S7 Connector, Databus and Common configurator  must be configured. Afterwards it is possible to add the varaibles in asset, And in the storage data to see the asset variables, which obtain the PLC Data information. The data can be visualized with graphical structure.
 
 ## Requirements
 
