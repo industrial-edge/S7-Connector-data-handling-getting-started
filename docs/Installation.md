@@ -32,7 +32,7 @@ Deploy the configuration.
 
 ### Configure the SIMATIC S7 Connector
 
-In your IEM open the SIMATIC S7 Connector and launch the configurator.
+In your IED open the common configuratort and configure the S7 connecotr 
 
 Add a data source:
 
