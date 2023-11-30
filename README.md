@@ -29,7 +29,7 @@ This application example describes the implementation and usage of the Common co
 
 ### General task
 
-The application read and write some data of the PLC. The data is published via SIMATIC S7 Connector and Databus where the IIH essential can retrive the data. First, the SIMATIC S7 Connector, Databus and Common configurator  must be configured. Afterwards it is possible to add the varaibles in asset, And in the storage data to see the asset variables, which obtain the PLC Data information. The data can be visualized with graphical structure.
+The application read and write some data of the PLC. The data is published via SIMATIC S7 Connector and Databus where the IIH essentials can retrive the data. First, the SIMATIC S7 Connector, Databus and Common configurator  must be configured. Afterwards it is possible to add the varaibles in asset, And in the storage data to see the asset variables, which obtain the PLC Data information. The data can be visualized with graphical structure.
 
 ## Requirements
 
@@ -39,17 +39,18 @@ The application read and write some data of the PLC. The data is published via S
 - Onboarded Industrial Edge Device on IEM
 - Installed System Configurators for Databus and SIMATIC S7 Connector
 - Installed System Apps Databus and SIMATIC S7 Connector
-- Installed Apps Flow Creator
+- Installed Apps common configurator
 - Edge device is connected to PLC
-- TIA portal project loaded on PLC (e.g. for filling application)
+- TIA portal project loaded on PLC (e.g. for Tank filling application)
 
 ### Used components
 
-- Industrial Edge Management V1.5.2-4 / V1.11.8
-  - Databus V2.1.0-4
-  - Databus Configurator V2.0.0-5
-  - Flow Creator V 1.12.0
-  - Common Connector Configurator V1.8.1-4
+- Industrial Edge Management V1.13.10/Kubernetes
+  - Databus V2.2.0-3
+  - Databus Configurator V2.2.0-4
+  - Flow Creator V1.15.0
+  - IIH Essentials V1.8.1 
+  - Common Connector Configurator V1.8.1-1
   - SIMATIC S7 Connector V1.8.1
 - Industrial Edge Device V1.10.0-9
 - TIA Portal V16
