@@ -36,7 +36,7 @@ In your IED open the common configuratort and configure the S7 connecotr
 
 Add a data source:
 
-![S7_connector_data_source](graphics/S7_Connector_Data_Source.png)
+![S7_data_source](graphics/S7_data_source.png)
 
 Add a data Databus credentials in common configurator:
 
