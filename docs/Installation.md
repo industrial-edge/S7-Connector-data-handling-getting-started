@@ -40,7 +40,7 @@ Add a data source:
 
 Add a data Databus credentials in common configurator:
 
-![S7_connector_data_source](graphics/S7_Connector_Data_Source.png)
+![Databus_IIH.PNG](graphics/Databus_IIH.PNG)
 
 Add needed tags (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
