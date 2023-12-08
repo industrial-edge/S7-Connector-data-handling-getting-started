@@ -42,26 +42,22 @@ Add a data Databus credentials in common configurator:
 
 ![Databus_IIH.PNG](graphics/Databus_IIH.PNG)
 
+Hint: Username and password should be the same as was set in the Databus configuration, e.g., "edge" / "edge".
+
+Deploy and start the project.
+
 Import the tags to S7 connector in common configurator:
 ![importtags.png](graphics/importtags.png)
 
 Add needed tags (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
-![s7_connector_config](graphics/S7_Connector_Configuration.PNG)
+![S7tags](graphics/S7tags.png)
 
 >Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
 
-Edit the settings:
-
-![s7_connector_settings](graphics/S7_Connector_Settings.png)
-
-Hint: Username and password should be the same as was set in the Databus configuration, e.g., "edge" / "edge".
-
-Deploy and start the project.
-
 ## Configure Flow Creator
 
-Open the IE Flow Creator App from the IED Web UI and import the [FlowCreator.JSON](../src/FlowCreator.json) file from the source folder.
+Open the Flow Creator App from the IED Web UI and import the [FlowCreator.JSON](../src/FlowCreator.json) file from the source folder.
 
 ![importFlowCreator.PNG](graphics/importFlowCreator.PNG)
 
