@@ -43,7 +43,7 @@ Add a data Databus credentials in common configurator:
 ![Databus_IIH.PNG](graphics/Databus_IIH.PNG)
 
 Import the tags to S7 connector in common configurator:
-![Databus_IIH.PNG](graphics/Databus_IIH.PNG)
+![importtags.png](graphics/importtags.png)
 
 Add needed tags (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
