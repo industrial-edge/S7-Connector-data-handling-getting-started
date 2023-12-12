@@ -56,8 +56,8 @@ The application read and write some data of the PLC. The data is published via S
   - Common Connector Configurator V1.8.1-1
   - SIMATIC S7 Connector V1.8.1
 - Industrial Edge Device V1.16.0-1-a-rc1
-- TIA Portal V16
-- S7-1511C
+- TIA Portal V18
+- S7-1500 (PLC)
 - Web browser (Mozilla or Chrome)
 
 ### Further requirements
