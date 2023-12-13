@@ -31,7 +31,7 @@ Add a user with this topic:
 
 Deploy the configuration.
 
-### Configure the SIMATIC S7 Connector
+### Configure the SIMATIC S7 Connector with IEM
 
 In your IED open the common configuratort and configure the S7 connecotr 
 
