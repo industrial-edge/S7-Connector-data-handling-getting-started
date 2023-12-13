@@ -3,8 +3,8 @@
 - [Configuration](#configuration)
   - [Configure PLC Connection](#configure-plc-connection)
     - [Configure the Databus](#configure-the-databus)
-    - [Configure the SIMATIC S7 Connector with IEM](#configure-the-simatic-s7-connector-with-IEM)
     - [Configure the SIMATIC S7 Connector at IE Device](#configure-the-simatic-s7-connector-at-IE-Device)
+    - [Configure the SIMATIC S7 Connector With IEM](#configure-the-simatic-s7-connector-With-IEM)
   - [Configure Flow Creator](#configure-flow-creator)
 
 ## Configure PLC Connection
@@ -55,6 +55,24 @@ Add needed tags (since we want to write variable values into the PLC, set "Read 
 ![S7tags](graphics/S7tags.png)
 
 >Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
+
+### Configure the SIMATIC S7 Connector with IE Device
+In your IEM open the SIMATIC S7 Connector and launch the configurator.
+
+Add a data source:
+
+![S7_connector_data_source](graphics/S7_Connector_Data_Source.png)
+
+Add needed tags (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
+
+![s7_connector_config](graphics/S7_Connector_Configuration.PNG)
+
+>Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
+
+Edit the settings:
+
+![s7_connector_settings](graphics/S7_Connector_Settings.png)
+
 
 ## Configure Flow Creator
 
