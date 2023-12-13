@@ -33,7 +33,7 @@ Deploy the configuration.
 
 ### Configure the SIMATIC S7 Connector at IE Device
 
-In your IED open the common configuratort and configure the S7 connecotr
+In your IED open the common configurator and configure the S7 connecotr
 
 This Configuration done localy at the IE Device
 
