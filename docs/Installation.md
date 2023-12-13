@@ -51,7 +51,7 @@ Deploy and start the project.
 
 Import the tags to S7 connector from S7.zip file exported from TIA portal by using export SCADA simatic tool in common configurator:
 
-![importtags.png](graphics/importtags.png)
+![Importtags1.PNG](graphics/Importtags1.PNG)
 
 Add these four tags GDB.signals.tankSignals.actLevel, GDB.signals.tanksignals.actTemperature, GDB.signals.bottleSignals.maxLevel, GDB.signals.energySignals.energyConsumptionfillingtank with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
