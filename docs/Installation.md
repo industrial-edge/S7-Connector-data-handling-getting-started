@@ -49,16 +49,18 @@ Hint: Username and password should be the same as was set in the Databus configu
 
 Deploy and start the project.
 
-Import the tags to S7 connector in common configurator:
+Import the tags to S7 connector from S7.zip file exported from TIA portal by using export SCADA simatic tool in common configurator:
+
 ![importtags.png](graphics/importtags.png)
 
-Add needed tags (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
+Add these four tags GDB.signals.tankSignals.actLevel, GDB.signals.tanksignals.actTemperature, GDB.signals.bottleSignals.maxLevel, GDB.signals.energySignals.energyConsumptionfillingtank with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
 ![S7tags](graphics/S7tags.png)
 
 >Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
 
 ### Configure the SIMATIC S7 Connector with IEM
+
 In your IEM open the SIMATIC S7 Connector and launch the configurator.
 
 This configuartion done centraly at IEM 
