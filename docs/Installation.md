@@ -3,7 +3,8 @@
 - [Configuration](#configuration)
   - [Configure PLC Connection](#configure-plc-connection)
     - [Configure the Databus](#configure-the-databus)
-    - [Configure the SIMATIC S7 Connector](#configure-the-simatic-s7-connector)
+    - [Configure the SIMATIC S7 Connector with IEM](#configure-the-simatic-s7-connector-with-IEM)
+    - [Configure the SIMATIC S7 Connector at IE Device](#configure-the-simatic-s7-connector-at-IE-Device)
   - [Configure Flow Creator](#configure-flow-creator)
 
 ## Configure PLC Connection
