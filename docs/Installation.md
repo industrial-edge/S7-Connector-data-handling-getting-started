@@ -55,7 +55,7 @@ Import the tags to S7 connector from S7.zip file exported from TIA portal by usi
 
 Add these four tags GDB.signals.tankSignals.actLevel, GDB.signals.tanksignals.actTemperature, GDB.signals.bottleSignals.maxLevel, GDB.signals.energySignals.energyConsumptionfillingtank with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
-![S7tags](graphics/S7tags.png)
+![s7tags1.PNG](graphics/s7tags1.PNG)
 
 >Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
 
