@@ -33,7 +33,9 @@ Deploy the configuration.
 
 ### Configure the SIMATIC S7 Connector at IE Device
 
-In your IED open the common configuratort and configure the S7 connecotr 
+In your IED open the common configuratort and configure the S7 connecotr
+
+This Configuration done localy at the IE Device
 
 Add a data source:
 
@@ -58,6 +60,8 @@ Add needed tags (since we want to write variable values into the PLC, set "Read 
 
 ### Configure the SIMATIC S7 Connector with IEM
 In your IEM open the SIMATIC S7 Connector and launch the configurator.
+
+This configuartion done centraly at IEM 
 
 Add a data source:
 
