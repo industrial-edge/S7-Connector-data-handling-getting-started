@@ -3,8 +3,7 @@
 - [Configuration](#configuration)
   - [Configure PLC Connection](#configure-plc-connection)
     - [Configure the Databus](#configure-the-databus)
-    - [Configure the SIMATIC S7 Connector at IE Device](#configure-the-simatic-s7-connector-at-IE-Device)
-    - [Configure the SIMATIC S7 Connector with IEM](#configure-the-simatic-s7-connector-with-IEM)
+    - [Configure the SIMATIC S7 Connector](#configure-the-simatic-s7-connector)
   - [Configure Flow Creator](#configure-flow-creator)
 
 ## Configure PLC Connection
@@ -31,11 +30,18 @@ Add a user with this topic:
 
 Deploy the configuration.
 
-### Configure the SIMATIC S7 Connector at IE Device
+### Configure the SIMATIC S7 Connector 
 
-In your IED open the common configurator and configure the S7 connecotr
+Simatic S7 Connector can be configured via both bellow mentioned options
 
-This Configuration done localy at the IE Device
+a) Local configuration with Industrial edge device
+
+b) Central configuration with Industrial edge managment 
+
+
+In your Industrial edge device open the common configurator and configure the S7 connecotr
+
+This Configuration done localy at the Industrial edge Device
 
 Add a data source:
 
@@ -59,7 +65,6 @@ Add these four tags GDB.signals.tankSignals.actLevel, GDB.signals.tanksignals.ac
 
 >Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
 
-### Configure the SIMATIC S7 Connector with IEM
 
 In your IEM open the SIMATIC S7 Connector and launch the configurator.
 
