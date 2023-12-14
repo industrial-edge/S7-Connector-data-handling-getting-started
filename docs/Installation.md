@@ -34,12 +34,15 @@ Deploy the configuration.
 
 Simatic S7 Connector can be configured via both bellow mentioned options
 
-a) Local configuration with Industrial edge device
 
-b) Central configuration with Industrial edge managment 
+###### a) Local configuration with Industrial edge device
+
+###### b) Central configuration with Industrial edge managment 
 
 
-In your Industrial edge device open the common configurator and configure the S7 connecotr
+#### Local Configuration
+
+In your Industrial edge device open the common configurator and configure the S7 connector
 
 This Configuration done localy at the Industrial edge Device
 
@@ -65,6 +68,7 @@ Add these four tags GDB.signals.tankSignals.actLevel, GDB.signals.tanksignals.ac
 
 >Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
 
+#### Central Configuration
 
 In your IEM open the SIMATIC S7 Connector and launch the configurator.
 
