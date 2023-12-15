@@ -76,17 +76,19 @@ This configuartion done centraly at IEM
 
 Add a data source:
 
-![S7_datasource.png](docs/graphics/S7_datasource.png)
+![S7_datasource.png](graphics/S7_datasource.png)
 
-Add needed tags (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
+Add these four tags GDB.signals.tankSignals.actLevel, GDB.signals.tanksignals.actTemperature, GDB.signals.bottleSignals.maxLevel, GDB.signals.energySignals.energyConsumptionfillingtank with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode):  
 
-![s7_connector_config](graphics/S7_Connector_Configuration.PNG)
+![s7centraltags](graphics/s7centraltags.PNG)
 
 >Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
 
 Edit the settings:
 
 ![s7_connector_settings](graphics/S7_Connector_Settings.png)
+
+Hint: Username and password should be the same as was set in the Databus configuration, e.g., "edge" / "edge".
 
 
 ## Configure Flow Creator
