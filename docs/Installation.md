@@ -78,7 +78,9 @@ Add a data source:
 
 ![S7_datasource.png](graphics/S7_datasource.png)
 
+
 Browse the tags from PLC 
+
 
 ![browsetags](graphics/browsetags.PNG)
 
