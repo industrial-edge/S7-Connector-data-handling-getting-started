@@ -76,7 +76,7 @@ This configuartion done centraly at IEM
 
 Add a data source:
 
-![S7_datasource.png](graphics/S7_datasource.png)
+![sinusadddatacentral.png](graphics/sinusadddatacentral.png)
 
 
 Browse the tags from PLC 
