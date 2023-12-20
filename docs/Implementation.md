@@ -32,7 +32,7 @@ In the following messages the distinction between the datapoints can only be mad
 
 By change of a subscribe variable, the SIMATIC S7 Connector send another MQTT-messages which includes an Array with all changed variables. The information of the datapoint include the ID, timestamp and current value.
 
-![mqttin_Message](graphics/MQTT-message.PNG)
+![Datapoints.PNG](graphics/Datapoints.PNG)
 
 ### Send an MQTT-Message to write Data
 
@@ -84,7 +84,7 @@ The desired information about the connection and the data points can be filtered
   }
 
 ```
-![Function-filterData_Message](graphics/Function-filterData_Message.PNG)
+![Datapoints.PNG](graphics/Datapoints.PNG)
 
 Sometimes it is necessary to store data in a global variable. In the case of the example the HashMap’s which include the assignment from Name to ID and the HashMap which stores the current values of the datapoints are global, so that they can be accessed in all functions of the Flow.
 
