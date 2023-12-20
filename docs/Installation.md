@@ -60,7 +60,7 @@ Deploy and start the project.
 
 Import the tags to S7 connector from S7.zip file exported from TIA portal by using export SCADA simatic tool in common configurator:
 
-![Importtags1.PNG](graphics/Importtags1.PNG)
+![addtagssinuslocal.png](graphics/addtagssinuslocal.png)
 
 Add these five tags InstSinus.statCountVal, sinusParameter.freq, sinusParameter.offset, GDB.signals.energySignals.energyConsumptionfillingtank with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
