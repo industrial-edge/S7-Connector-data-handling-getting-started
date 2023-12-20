@@ -62,9 +62,9 @@ Import the tags to S7 connector from S7.zip file exported from TIA portal by usi
 
 ![addtagssinuslocal.png](graphics/addtagssinuslocal.png)
 
-Add these five tags InstSinus.statCountVal, sinusParameter.freq, sinusParameter.offset, sinusParameter.amplitude, sinusParameter.sinusVal with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
+Add these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
-![sinus5tagslocal.PNG](graphics/sinus5tagslocal.PNG)
+![Localnewtag.PNG](graphics/Localnewtag.PNG)
 
 >Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
 
