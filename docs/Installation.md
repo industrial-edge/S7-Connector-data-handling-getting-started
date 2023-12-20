@@ -86,10 +86,10 @@ Browse the tags from PLC
 
 
 
-Add these four tags GDB.signals.tankSignals.actLevel, GDB.signals.tanksignals.actTemperature, GDB.signals.bottleSignals.maxLevel, GDB.signals.energySignals.energyConsumptionfillingtank with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode):  
+Add these five tags InstSinus.statCountVal, sinusParameter.freq, sinusParameter.offset, sinusParameter.amplitude, sinusParameter.sinusVal with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode):   
 
 
-![s7centraltags](graphics/s7centraltags.PNG)
+![sinustagscentral.png](graphics/sinustagscentral.png)
 
 Edit the settings:
 
