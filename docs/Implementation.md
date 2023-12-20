@@ -149,7 +149,7 @@ The diagrams as well as the form for controlling the PLC variables are displayed
 
 ![Dashboard Settings](graphics/Dashboardsettings.PNG)
 
-![Dashboard](graphics/Dashboard.PNG)
+![Sinuswavechart.PNG](graphics/Sinuswavechart.PNG)
 
 ### Data Handling
 The biggest challenge of the example was to handle and assign the datapoint metadata flexibly. In other words, it is possible to query at any time which variable has which ID and which value. For this purpose, two global HashMaps have been created. One HashMap (NameIDMap) stores the ID that is associated to the variable name. This information is sent with the meta data. The other HashMap (IDValueMap) stores the current values that are associated to the ID. This information is always sent whenever the variable value changes.
@@ -199,7 +199,7 @@ assign Name to ID.
   #################################*/  
   global.set("NameIDMap", nameIDMap);
 ```
-![MQTT-init-message](graphics/MQTT-init-message.PNG)
+![Metapoints.PNG](graphics/Metapoints.PNG)
 
 ##### Asign ID-Value
 **assign ID to the Value**
