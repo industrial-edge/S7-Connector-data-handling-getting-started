@@ -110,6 +110,8 @@ After importing the JSON file, the password set in the Databus must be entered i
 
 ![ServerEinstellungen.PNG](graphics/Server_einstellungen.PNG)
 
+Hint: Username and password should be the same , e.g., "edge" / "edge".
+
 ![SecuritySetting.PNG](graphics/SecuritySetting.PNG)
 
 
