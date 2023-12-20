@@ -119,7 +119,7 @@ Debugging is possible with the debugging node. This allows to view the messages 
 
 ![Debuggingnode](graphics/Debugging-Block.PNG)
 
-![Debuggingwindow](graphics/Debugging-Window.PNG)
+![S7metapoint.PNG](graphics/S7metapoint.PNG)
 
 
 ### Create Line Diagram
