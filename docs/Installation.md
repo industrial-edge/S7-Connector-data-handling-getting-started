@@ -86,10 +86,10 @@ Browse the tags from PLC
 
 
 
-Add these five tags InstSinus.statCountVal, sinusParameter.freq, sinusParameter.offset, sinusParameter.amplitude, sinusParameter.sinusVal with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode):   
+Add these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode):   
 
 
-![sinustagscentral.png](graphics/sinustagscentral.png)
+![newcentralsinustag.png](graphics/newcentralsinustag.png)
 
 Edit the settings:
 
