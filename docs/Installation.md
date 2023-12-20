@@ -48,7 +48,7 @@ This Configuration done localy at the Industrial edge Device
 
 Add a data source:
 
-![S7_data_source](graphics/S7_data_source.png)
+![sinuslocaldatasource.png](graphics/sinuslocaldatasource.png)
 
 Add a data Databus credentials in common configurator:
 
