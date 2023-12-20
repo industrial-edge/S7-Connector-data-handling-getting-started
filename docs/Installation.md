@@ -82,7 +82,7 @@ Add a data source:
 Browse the tags from PLC 
 
 
-![browsetags](graphics/browsetags.PNG)
+![browsetagssinus.PNG](graphics/browsetagssinus.PNG)
 
 
 
