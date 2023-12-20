@@ -26,7 +26,7 @@ Using the "mqtt-in" node makes it possible to receive the published MQTT-Message
 
 To save the changes and establish a connection press the deploy button in the left corner. At the beginning, after the establishment of the connection, the SIMATIC S7 Connector will publish a message with meta data. This message contains an array with all the connections and the different datapoints of these connections. All the datapoints have a name and an ID. The ID of a data point does not necessarily always remain the same. With same changes (for example in the TIA-Project) the ID can change.
 
-![mqttin_init_Message](graphics/MQTT-init-message.PNG)
+![Metapoints.PNG](graphics/Metapoints.PNG)
 
 In the following messages the distinction between the datapoints can only be made by the ID. So, it is necessary to save the assignment between name and ID for the processing of the messages. In this example this is realized with a HashMap, in which the name acts as key and the ID as value. With this HashMap it is always possible to get the right ID to the variable name. More details information can be found under [Data Handling](#data-handling).
 
