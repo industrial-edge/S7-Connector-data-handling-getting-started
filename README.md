@@ -86,7 +86,7 @@ Once the application is successfully deployed, the sinus wave can be deployed in
 
 ![InkedDashboardsettings_LI.jpg](docs/graphics/InkedDashboardsettings_LI.jpg)
 
-![Dashboard.PNG](docs/graphics/Dashboard.PNG)
+![Sinuswavechart.PNG](docs/graphics/Sinuswavechart.PNG)
 
 ## Implementation
 A detailed description of the implementation of the project can be found in the [implementation](docs/Implementation.md) file
