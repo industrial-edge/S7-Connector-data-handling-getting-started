@@ -42,19 +42,19 @@ The application read and write some data of the PLC. The data is published via S
 - Installed System Apps Databus and SIMATIC S7 Connector
 - Installed Apps common configurator
 - Edge device is connected to PLC
-- TIA portal project loaded on PLC (e.g. for Tank filling application)
+- TIA portal project loaded on PLC (e.g. for HowTos_Sinus_Wave application)
 
 ### Used components
 
 - Industrial Edge Management V1.13.10/Kubernetes
   - Databus V2.2.0-3
-  - Databus Configurator V2.2.0-4
+  - Databus Configurator V2.3.1-4
   - Common import converter V2.0.0-1
   - Registry Service V1.8.0-2
   - Flow Creator V1.15.0
   - IIH Essentials V1.8.1 
-  - Common Connector Configurator V1.8.1-1
-  - SIMATIC S7 Connector V1.8.1
+  - Common Configurator V1.9.0-4
+  - SIMATIC S7 Connector V2.0.0-1
 - Industrial Edge Device V1.16.0-1-a-rc1
 - TIA Portal V18
 - S7-1500 (PLC)
