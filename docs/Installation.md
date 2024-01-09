@@ -67,6 +67,7 @@ Download the SCADA simatic tool from siemens site for TIA portal:
 
 ![addtagssinuslocal.png](graphics/addtagssinuslocal.png) 
 
+
 Add these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
 ![Localnewtag.PNG](graphics/Localnewtag.PNG)
