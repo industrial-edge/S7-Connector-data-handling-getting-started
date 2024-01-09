@@ -60,7 +60,10 @@ Deploy and start the project.
 
 Import the tags to S7 connector from S7.zip file exported from TIA portal by using export SCADA simatic tool in common configurator:
 
-![addtagssinuslocal.png](graphics/simatic.png) 
+Download the SCADA simatic tool from siemens site for TIA portal:
+
+![simaticscada.PNG](graphics/simaticscada.PNG) 
+
 
 ![addtagssinuslocal.png](graphics/addtagssinuslocal.png) 
 
