@@ -25,7 +25,7 @@ This repository contains the source files to build the Simatic S7 Connector Data
 
 This application example describes the implementation and usage of the Flow Creator using the example of a sinusoidal wave.
 
-![s7architecture1](docs/graphics/s7architecture1.PNG)
+![S7newarchi.PNG](docs/graphics/S7newarchi.PNG)
 
 ### General task
 
