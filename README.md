@@ -62,7 +62,7 @@ The application read and write some data of the PLC. The data is published via S
 
 ### Further requirements
 
-- IE Device is onboarded to a IE Management
+- IE Device is onboarded to a Industria Edge Management
 - Databus Configurator is deployed to the IE Management
 - Databus is deployed to the IE Device
 - S7 connector configured via Common configurator 
