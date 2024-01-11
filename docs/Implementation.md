@@ -26,13 +26,13 @@ Using the "mqtt-in" node makes it possible to receive the published MQTT-Message
 
 To save the changes and establish a connection press the deploy button in the left corner. At the beginning, after the establishment of the connection, the SIMATIC S7 Connector will publish a message with meta data. This message contains an array with all the connections and the different datapoints of these connections. All the datapoints have a name and an ID. The ID of a data point does not necessarily always remain the same. With same changes (for example in the TIA-Project) the ID can change.
 
-![mqttin_init_Message](graphics/MQTT-init-message.PNG)
+![Metapoints.PNG](graphics/Metapoints.PNG)
 
 In the following messages the distinction between the datapoints can only be made by the ID. So, it is necessary to save the assignment between name and ID for the processing of the messages. In this example this is realized with a HashMap, in which the name acts as key and the ID as value. With this HashMap it is always possible to get the right ID to the variable name. More details information can be found under [Data Handling](#data-handling).
 
 By change of a subscribe variable, the SIMATIC S7 Connector send another MQTT-messages which includes an Array with all changed variables. The information of the datapoint include the ID, timestamp and current value.
 
-![mqttin_Message](graphics/MQTT-message.PNG)
+![Datapoints.PNG](graphics/Datapoints.PNG)
 
 ### Send an MQTT-Message to write Data
 
@@ -84,7 +84,7 @@ The desired information about the connection and the data points can be filtered
   }
 
 ```
-![Function-filterData_Message](graphics/Function-filterData_Message.PNG)
+![Datapoints.PNG](graphics/Datapoints.PNG)
 
 Sometimes it is necessary to store data in a global variable. In the case of the example the HashMap’s which include the assignment from Name to ID and the HashMap which stores the current values of the datapoints are global, so that they can be accessed in all functions of the Flow.
 
@@ -119,7 +119,7 @@ Debugging is possible with the debugging node. This allows to view the messages 
 
 ![Debuggingnode](graphics/Debugging-Block.PNG)
 
-![Debuggingwindow](graphics/Debugging-Window.PNG)
+![S7metapoint.PNG](graphics/S7metapoint.PNG)
 
 
 ### Create Line Diagram
@@ -149,7 +149,7 @@ The diagrams as well as the form for controlling the PLC variables are displayed
 
 ![Dashboard Settings](graphics/Dashboardsettings.PNG)
 
-![Dashboard](graphics/Dashboard.PNG)
+![Sinuswavechart.PNG](graphics/Sinuswavechart.PNG)
 
 ### Data Handling
 The biggest challenge of the example was to handle and assign the datapoint metadata flexibly. In other words, it is possible to query at any time which variable has which ID and which value. For this purpose, two global HashMaps have been created. One HashMap (NameIDMap) stores the ID that is associated to the variable name. This information is sent with the meta data. The other HashMap (IDValueMap) stores the current values that are associated to the ID. This information is always sent whenever the variable value changes.
@@ -199,7 +199,7 @@ assign Name to ID.
   #################################*/  
   global.set("NameIDMap", nameIDMap);
 ```
-![MQTT-init-message](graphics/MQTT-init-message.PNG)
+![Metapoints.PNG](graphics/Metapoints.PNG)
 
 ##### Asign ID-Value
 **assign ID to the Value**

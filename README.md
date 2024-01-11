@@ -1,6 +1,6 @@
 # S7 Connector Data Handling Getting Started
 
-This repository contains the source files to build the OPC UA Connector Data Handling Getting Started example.
+This repository contains the source files to build the Simatic S7 Connector Data Handling Getting Started example.
 
 - [S7 Connector Data Handling Getting Started](#s7-connector-data-handling-getting-started)
   - [Description](#description)
@@ -23,13 +23,14 @@ This repository contains the source files to build the OPC UA Connector Data Han
 
 ### Overview
 
-This application example describes the implementation and usage of the Flow Creator using the example of a sinusoidal wave. 
+This application example describes the implementation and usage of the Flow Creator using the example of a sinusoidal wave.
 
-![Use Case](docs/graphics/DataFlow.PNG)
+![S7newarchi.PNG](docs/graphics/S7newarchi.PNG)
 
 ### General task
 
-The application read and write some data of the PLC. The data is published via SIMATIC S7 Connector and Databus where the Flow Creator can retrieve the data. First, the SIMATIC S7 Connector and the Databus must be configured. Afterwards it is possible to subscribe the different topics in the Flow Creator and edit, filter and display the messages which obtain the PLC Data information. The data can be visualized with different graphics such as charts, gauge or forms.
+The application read and write some data of the PLC. The data is published via SIMATIC S7 Connector and Databus where the Flow Creator can retrieve the data. First, the SIMATIC S7 Connector, Common Configurator needs to be configured. Afterwards it is possible to subscribe the different topics in the Flow Creator and edit, filter and display the messages which obtain the PLC Data information. The data can be visualized with different graphics such as charts, gauge or forms.
+
 
 ## Requirements
 
@@ -39,28 +40,32 @@ The application read and write some data of the PLC. The data is published via S
 - Onboarded Industrial Edge Device on IEM
 - Installed System Configurators for Databus and SIMATIC S7 Connector
 - Installed System Apps Databus and SIMATIC S7 Connector
-- Installed Apps Flow Creator
+- Installed Apps common configurator
 - Edge device is connected to PLC
-- TIA portal project loaded on PLC (e.g. for filling application)
+- TIA portal project loaded on PLC (e.g. for HowTos_Sinus_Wave application)
 
 ### Used components
 
-- Industrial Edge Management V1.5.2-4 / V1.11.8
-  - Databus V2.1.0-4
-  - Databus Configurator V2.0.0-5
-  - Flow Creator V 1.12.0
-  - Common Connector Configurator V1.8.1-4
-  - SIMATIC S7 Connector V1.8.1
-- Industrial Edge Device V1.10.0-9
-- TIA Portal V16
-- S7-1511C
+- Industrial Edge Management V1.13.10/Kubernetes
+  - Databus V2.2.0-3
+  - Databus Configurator V2.3.1-4
+  - Common import converter V2.0.0-1
+  - Registry Service V1.8.0-2
+  - Flow Creator V1.15.0
+  - IIH Essentials V1.8.1 
+  - Common Configurator V1.9.0-4
+  - SIMATIC S7 Connector V2.0.0-1
+- Industrial Edge Device V1.16.0-1-a-rc1
+- TIA Portal V18
+- S7-1500 (PLC)
 - Web browser (Mozilla or Chrome)
 
 ### Further requirements
 
-- IE Device is onboarded to a IE Management
+- IE Device is onboarded to a Industria Edge Management
 - Databus Configurator is deployed to the IE Management
 - Databus is deployed to the IE Device
+- S7 connector configured via Common configurator 
 - Flow Creator is deployed to the IE Device
 
 ### TIA Project
@@ -81,7 +86,7 @@ Once the application is successfully deployed, the sinus wave can be deployed in
 
 ![InkedDashboardsettings_LI.jpg](docs/graphics/InkedDashboardsettings_LI.jpg)
 
-![Dashboard.PNG](docs/graphics/Dashboard.PNG)
+![Sinuswavechart.PNG](docs/graphics/Sinuswavechart.PNG)
 
 ## Implementation
 A detailed description of the implementation of the project can be found in the [implementation](docs/Implementation.md) file
@@ -97,10 +102,9 @@ A detailed description of the implementation of the project can be found in the 
   
 ## Contribution
 
-Thank you for your interest in contributing. Anybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section.
-Additionally everybody is free to propose any changes to this repository using Pull Requests.
+Thank you for your interest in contributing. Anybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section. Additionally everybody is free to propose any changes to this repository using Pull Requests.
 
-If you are interested in contributing via Pull Request, please check the [Contribution License Agreement](Siemens_CLA_1.1.pdf) and forward a signed copy to [industrialedge.industry@siemens.com](mailto:industrialedge.industry@siemens.com?subject=CLA%20Agreement%20Industrial-Edge).
+If you haven't previously signed the [Siemens Contributor License Agreement](https://cla-assistant.io/industrial-edge/) (CLA), the system will automatically prompt you to do so when you submit your Pull Request. This can be conveniently done through the CLA Assistant's online platform. Once the CLA is signed, your Pull Request will automatically be cleared and made ready for merging if all other test stages succeed.
 
 ## License and Legal Information
 
