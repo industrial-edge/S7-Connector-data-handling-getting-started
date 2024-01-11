@@ -29,7 +29,7 @@ This application example describes the implementation and usage of the Flow Crea
 
 ### General task
 
-The application read and write some data of the PLC. The data is published via SIMATIC S7 Connector and Databus where the Flow Creator can retrieve the data. First, the SIMATIC S7 Connector, Commmon Configurator needs to be configured. Afterwards it is possible to subscribe the different topics in the Flow Creator and edit, filter and display the messages which obtain the PLC Data information. The data can be visualized with different graphics such as charts, gauge or forms.
+The application read and write some data of the PLC. The data is published via SIMATIC S7 Connector and Databus where the Flow Creator can retrieve the data. First, the SIMATIC S7 Connector, Common Configurator needs to be configured. Afterwards it is possible to subscribe the different topics in the Flow Creator and edit, filter and display the messages which obtain the PLC Data information. The data can be visualized with different graphics such as charts, gauge or forms.
 
 
 ## Requirements
