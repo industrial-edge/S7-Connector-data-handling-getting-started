@@ -37,14 +37,14 @@ Simatic S7 Connector can be configured via both bellow mentioned options
 
 ###### a) Local configuration with Industrial edge device
 
-###### b) Central configuration with Industrial edge managment 
+###### b) Central configuration with Industrial edge management 
 
 
 #### Local Configuration
 
 In your Industrial edge device open the common configurator and configure the S7 connector
 
-This Configuration done localy at the Industrial edge Device
+This Configuration done locally at the Industrial edge Device
 
 Add a data source:
 
@@ -78,7 +78,7 @@ Add these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisi
 
 In your IEM open the SIMATIC S7 Connector and launch the configurator.
 
-This configuartion done centraly at IEM 
+This configuration done centrally at IEM 
 
 Add a data source:
 
