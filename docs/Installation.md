@@ -58,14 +58,13 @@ Hint: Username and password should be the same as was set in the Databus configu
 
 Click save.
 
-Import the tags to S7 connector from S7.zip file exported from TIA portal by using export SCADA simatic tool in common configurator:
+export the S7.zip file from TIA portal by using export SCADA simatic tool:
 
 Download the SCADA simatic tool from siemens site for TIA portal:
 
 ![simaticscada.PNG](graphics/simaticscada.PNG) 
 
-Import the S7.zip file to select tags 
-
+Import the tags to S7 connector from S7.zip file exported from TIA portal
 ![addtagssinuslocal.png](graphics/importtags.png) 
 
 Add select these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle and click import (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
