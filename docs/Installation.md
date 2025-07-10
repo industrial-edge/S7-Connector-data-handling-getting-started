@@ -48,15 +48,15 @@ This Configuration done locally at the Industrial edge Device
 
 Add a data source:
 
-![sinuslocaldatasource.png](graphics/sinuslocaldatasource.png)
+![sinuslocaldatasource.png](graphics/Localconfigscreenshot.png)
 
 Add a data Databus credentials in common configurator:
 
-![Databus_IIH.PNG](graphics/Databus_IIH.PNG)
+![Databus_IIH.PNG](graphics/databuslocalconfig.png)
 
 Hint: Username and password should be the same as was set in the Databus configuration, e.g., "edge" / "edge".
 
-Deploy and start the project.
+Click save.
 
 Import the tags to S7 connector from S7.zip file exported from TIA portal by using export SCADA simatic tool in common configurator:
 
@@ -64,13 +64,17 @@ Download the SCADA simatic tool from siemens site for TIA portal:
 
 ![simaticscada.PNG](graphics/simaticscada.PNG) 
 
+Import the S7.zip file to select tags 
 
-![addtagssinuslocal.png](graphics/addtagssinuslocal.png) 
+![addtagssinuslocal.png](graphics/importtags.png) 
 
+Add select these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle and click import (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
-Add these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
+![Localnewtag.PNG](graphics/selecttagsandimport.png)
 
-![Localnewtag.PNG](graphics/Localnewtag.PNG)
+And click deploy 
+
+![Deploy.PNG](graphics/deploy.png)
 
 >Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
 
