@@ -79,9 +79,16 @@ And click deploy
 
 #### Central Configuration
 
-In your IEM open the SIMATIC S7 Connector and launch the configurator.
+In your IEM open the data connection and click the SIMATIC S7 Connector.
+
+![Clicks7connector.png](graphics/dataconnectionS7connector.png)
+
+Launc the S7 connector to your device
 
 This configuration done centrally at IEM 
+
+![Clicks7connector.png](graphics/launchappS7connector.png)
+
 
 Add a data source:
 
