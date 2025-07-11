@@ -89,29 +89,34 @@ This configuration done centrally at IEM
 
 ![Clicks7connector.png](graphics/launchappS7connector.png)
 
+Click the settings icon and add the databus information.
 
-Add a data source:
+![s7_connector_settings](graphics/databuscentalconfig.png)
 
-![sinusadddatacentral.png](graphics/sinusadddatacentral.png)
+Hint: Username and password should be the same as was set in the Databus configuration, e.g., "edge" / "edge".
 
+Deploy the databus to your device
+
+![s7_connector_settings](graphics/databusdeploy.png)
+
+Click the Add data source.
+
+![sinusadddatacentral.png](graphics/centralconfigclickadddatasource.png)
+
+Now add the S7 configuration here.
+
+![sinusadddatacentral.png](graphics/centralconfigadddatasource.png)
 
 Browse the tags from PLC 
 
 
-![browsetagssinus.PNG](graphics/browsetagssinus.PNG)
+![browsetagssinus.PNG](graphics/Browsetags.png)
 
 
+Add these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle and click deploy (since we want to write variable values into the PLC, set "Read & Write" as access mode):   
 
-Add these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode):   
 
-
-![newcentralsinustag.png](graphics/newcentralsinustag.png)
-
-Edit the settings:
-
-![s7_connector_settings](graphics/S7_Connector_Settings.png)
-
-Hint: Username and password should be the same as was set in the Databus configuration, e.g., "edge" / "edge".
+![newcentralsinustag.png](graphics/completeconfigcentral.png)
 
 
 ## Configure Flow Creator
