@@ -42,7 +42,7 @@ The application read and write some data of the PLC. The data is published via S
 - Installed System Apps Databus and SIMATIC S7 Connector
 - Installed Apps common configurator
 - Edge device is connected to PLC
-- TIA portal project loaded on PLC (e.g. for HowTos_Sinus_Wave application)
+- TIA portal project loaded on PLC (e.g. tia-tank-application)
 
 ### Used components
 
