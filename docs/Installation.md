@@ -50,7 +50,7 @@ Add a data source:
 
 ![sinuslocaldatasource.png](graphics/Localconfigscreenshot.png)
 
-Add a data Databus credentials in common configurator:
+Add a Databus credentials in common configurator:
 
 ![Databus_IIH.PNG](graphics/databuslocalconfig.png)
 
