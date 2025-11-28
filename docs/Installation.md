@@ -32,13 +32,7 @@ Deploy the configuration.
 
 ### Configure the SIMATIC S7 Connector 
 
-Simatic S7 Connector can be configured via both bellow mentioned options
-
-
-###### a) Local configuration with Industrial edge device
-
-###### b) Central configuration with Industrial edge management 
-
+Simatic S7 Connector can be configured via Commom Configurator
 
 #### Local Configuration
 
@@ -76,48 +70,6 @@ And click deploy
 ![Deploy.PNG](graphics/deploy.png)
 
 >Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
-
-#### Central Configuration
-
-In your IEM open the data connection and click the SIMATIC S7 Connector.
-
-![Clicks7connector.png](graphics/dataconnectionS7connector.png)
-
-Launch the S7 connector to your device
-
-This configuration done centrally at IEM 
-
-![Clicks7connector.png](graphics/launchappS7connector.png)
-
-Click the settings icon and add the databus information.
-
-![s7_connector_settings](graphics/databuscentalconfig.png)
-
-Hint: Username and password should be the same as was set in the Databus configuration, e.g., "edge" / "edge".
-
-Deploy the databus to your device
-
-![s7_connector_settings](graphics/databusdeploy.png)
-
-Click the Add data source.
-
-![sinusadddatacentral.png](graphics/centralconfigclickadddatasource.png)
-
-Now add the S7 configuration here.
-
-![sinusadddatacentral.png](graphics/centralconfigadddatasource.png)
-
-Browse the tags from PLC 
-
-
-![browsetagssinus.PNG](graphics/Browsetags.png)
-
-
-Add these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle and click deploy (since we want to write variable values into the PLC, set "Read & Write" as access mode):   
-
-
-![newcentralsinustag.png](graphics/completeconfigcentral.png)
-
 
 ## Configure Flow Creator
 
