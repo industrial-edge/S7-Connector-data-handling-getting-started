@@ -25,7 +25,7 @@ This repository contains the source files to build the Simatic S7 Connector Data
 
 This application example describes the implementation and usage of the Flow Creator using the example of a sinusoidal wave.
 
-![S7newarchi.PNG](docs/graphics/S7newarchi.PNG)
+![S7archi.PNG](docs/graphics/S7archipic.png)
 
 ### General task
 
@@ -42,31 +42,30 @@ The application read and write some data of the PLC. The data is published via S
 - Installed System Apps Databus and SIMATIC S7 Connector
 - Installed Apps common configurator
 - Edge device is connected to PLC
-- TIA portal project loaded on PLC (e.g. for HowTos_Sinus_Wave application)
+- TIA portal project loaded on PLC (e.g. tia-tank-application)
 
 ### Used components
 
-- Industrial Edge Management V1.13.10/Kubernetes
-  - Databus V2.2.0-3
-  - Databus Configurator V2.3.1-4
-  - Common import converter V2.0.0-1
-  - Registry Service V1.8.0-2
-  - Flow Creator V1.15.0
-  - IIH Essentials V1.8.1 
-  - Common Configurator V1.9.0-4
-  - SIMATIC S7 Connector V2.0.0-1
-- Industrial Edge Device V1.16.0-1-a-rc1
-- TIA Portal V18
+- Industrial Edge Management V2.5.0-22
+  - Databus V3.2.1
+  - Databus Configurator V3.2.1
+  - Common import converter V3.1.0
+  - Flow Creator V1.19.0
+  - IIH Essentials V2.1.1
+  - Common Configurator V2.1.1
+  - SIMATIC S7 Connector V2.3.1
+- Industrial Edge Device V3.0.0-51
+- TIA Portal V19
 - S7-1500 (PLC)
 - Web browser (Mozilla or Chrome)
 
 ### Further requirements
 
-- IE Device is onboarded to a Industria Edge Management
-- Databus Configurator is deployed to the IE Management
-- Databus is deployed to the IE Device
+- Industrial Edge Device is onboarded to a Industria Edge Management
+- Databus Configurator is deployed to the Industrial Management
+- Databus is deployed to the Industrial Device
 - S7 connector configured via Common configurator 
-- Flow Creator is deployed to the IE Device
+- Flow Creator is deployed to the Industrial Device
 
 ### TIA Project
 

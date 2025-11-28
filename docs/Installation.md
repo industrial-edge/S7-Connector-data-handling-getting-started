@@ -32,13 +32,7 @@ Deploy the configuration.
 
 ### Configure the SIMATIC S7 Connector 
 
-Simatic S7 Connector can be configured via both bellow mentioned options
-
-
-###### a) Local configuration with Industrial edge device
-
-###### b) Central configuration with Industrial edge management 
-
+Simatic S7 Connector can be configured via Commom Configurator
 
 #### Local Configuration
 
@@ -48,61 +42,34 @@ This Configuration done locally at the Industrial edge Device
 
 Add a data source:
 
-![sinuslocaldatasource.png](graphics/sinuslocaldatasource.png)
+![sinuslocaldatasource.png](graphics/Localconfigscreenshot.png)
 
-Add a data Databus credentials in common configurator:
+Add a Databus credentials in common configurator:
 
-![Databus_IIH.PNG](graphics/Databus_IIH.PNG)
+![Databus_IIH.PNG](graphics/databuslocalconfig.png)
 
 Hint: Username and password should be the same as was set in the Databus configuration, e.g., "edge" / "edge".
 
-Deploy and start the project.
+Click save.
 
-Import the tags to S7 connector from S7.zip file exported from TIA portal by using export SCADA simatic tool in common configurator:
+export the S7.zip file from TIA portal by using export SCADA simatic tool:
 
 Download the SCADA simatic tool from siemens site for TIA portal:
 
 ![simaticscada.PNG](graphics/simaticscada.PNG) 
 
+Import the tags to S7 connector from S7.zip file exported from TIA portal
+![addtagssinuslocal.png](graphics/importtags.png) 
 
-![addtagssinuslocal.png](graphics/addtagssinuslocal.png) 
+Add select these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle and click import (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
 
+![Localnewtag.PNG](graphics/selecttagsandimport.png)
 
-Add these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode): 
+And click deploy 
 
-![Localnewtag.PNG](graphics/Localnewtag.PNG)
+![Deploy.PNG](graphics/deploy.png)
 
 >Hint! Please use the same variable names as shown in the screenshot, otherwise the flow creator script must be adjusted.
-
-#### Central Configuration
-
-In your IEM open the SIMATIC S7 Connector and launch the configurator.
-
-This configuration done centrally at IEM 
-
-Add a data source:
-
-![sinusadddatacentral.png](graphics/sinusadddatacentral.png)
-
-
-Browse the tags from PLC 
-
-
-![browsetagssinus.PNG](graphics/browsetagssinus.PNG)
-
-
-
-Add these four tags Frequency, Offset, Amplitude, SinusVal with 1 sec of acquisition cycle (since we want to write variable values into the PLC, set "Read & Write" as access mode):   
-
-
-![newcentralsinustag.png](graphics/newcentralsinustag.png)
-
-Edit the settings:
-
-![s7_connector_settings](graphics/S7_Connector_Settings.png)
-
-Hint: Username and password should be the same as was set in the Databus configuration, e.g., "edge" / "edge".
-
 
 ## Configure Flow Creator
 
