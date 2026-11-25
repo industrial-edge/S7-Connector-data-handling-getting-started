@@ -131,12 +131,17 @@ After filter the required current values of the PLC out of the MQTT-Messages of 
 An extra node is available for displaying the data in the gauge diagram. Again the group in which it will be displayed, must be selected. With the help of a function, the minimum and maximum values of the range can dynamically be changed. The associated code can be as followed.
 
 ```js
-  var max = (Number(msg.payload.Amplitude) + Number(msg.payload.Offset));
-  var min = max * (-1);
+let amplitude = Number(msg.payload.Amplitude);
+let offset = Number(msg.payload.Offset);
 
-  msg = {ui_control:{min:min,max:max}}
+msg.ui_update = {
+    min: offset - amplitude,
+    max: offset + amplitude
+};
 
-  return msg; 
+msg.payload = 0;
+
+return msg;
 ```
 
 ### Create a Form
